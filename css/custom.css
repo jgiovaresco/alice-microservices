@@ -1,0 +1,26 @@
+/***
+ * Custom stylesheet for talk
+ * Licence Creative Commons CC0
+ * Authors Julien Giovaresco and Willy Malvault
+ ***/
+
+.reveal .section {
+    top: 50px;
+}
+
+.nodejs-logo {
+    position: absolute;
+    left: 10px;
+    width: 250px;
+    transform: rotate(330deg);
+    border: 0;
+}
+
+.mongo-logo {
+    position: absolute;
+    border-style: none;
+    right: 10px;
+    width: 250px;
+    transform: rotate(30deg);
+    border: 0;
+}
