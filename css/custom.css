@@ -8,19 +8,52 @@
     top: 50px;
 }
 
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 .nodejs-logo {
     position: absolute;
     left: 10px;
-    width: 250px;
+    width: 200px;
     transform: rotate(330deg);
-    border: 0;
+}
+
+.express-logo {
+    position: absolute;
+    left: 300px;
+    width: 200px;
 }
 
 .mongo-logo {
     position: absolute;
-    border-style: none;
+    right: 10px;
+    width: 200px;
+    transform: rotate(30deg);
+}
+
+.rabbitmq-logo {
+    position: absolute;
+    width: 200px;
+}
+
+.aws-logo {
+    position: absolute;
+    left: 10px;
+    width: 250px;
+    transform: rotate(330deg);
+}
+
+.k8s-logo {
+    position: absolute;
     right: 10px;
     width: 250px;
     transform: rotate(30deg);
-    border: 0;
+}
+
+.docker-logo {
+    position: absolute;
+    width: 250px;
 }
