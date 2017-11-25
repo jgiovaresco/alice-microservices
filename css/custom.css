@@ -4,14 +4,24 @@
  * Authors Julien Giovaresco and Willy Malvault
  ***/
 
-.reveal .section {
-    top: 50px;
-}
-
 .reveal section img {
     background: none;
     border: none;
     box-shadow: none;
+}
+
+.rails-logo {
+    position: absolute;
+    left: 10px;
+    width: 200px;
+    transform: rotate(330deg);
+}
+
+.postgres-logo {
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    transform: rotate(30deg);
 }
 
 .nodejs-logo {
