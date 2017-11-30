@@ -75,9 +75,37 @@
                 </section>
 
                 <section>
+                    <h2>Data</h2>
+                    <ul>
+                        <li>1 Mongo cluster</li>
+                        <li>Each service handles its own collection</li>
+                        <li>+ : the common lib helps to build a new service quickly</li>
+                        <li>- : it endorses the use of Mongo even if the use of another db could be more relevant</li>
+                        <li>How to share data between services ?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Duplicate data between service</h2>
+                    <ul>
+                        <li>+ services are decoupled</li>
+                        <li>+ entities could be renamed to respect the language of the service</li>
+                        <li>- needs a robust messaging system</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ask for the data when needed</h2>
+                    <ul>
+                        <li>+ the data are not duplicated. Easier to keep consistency</li>
+                        <li>- services are dependents </li>
+                    </ul>
+                </section>
+
+                <section>
                     <h2>topics 1</h2>
                     <ul>
-                        <li>Data (NoSQL, shared DBEngine, data copy)</li>
+                        <li><strike>Data (NoSQL, shared DBEngine, data copy)</strike></li>
                         <li>Authorization</li>
                         <li>Configuration</li>
                         <li>Versionnings (Bridge-V3 = meta-project)</li>
