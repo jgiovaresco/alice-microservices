@@ -113,10 +113,36 @@
                 </section>
 
                 <section>
+                    <section>
+                        <h2>Authorization</h2>
+                        <ul>
+                            <li>Authentication handled by Keycloak</li>
+                            <li>Backoffice delegates the authentication</li>
+                            <li>Apis check the OAuth2 token in request headers</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Pros</h2>
+                        <ul>
+                            <li>Based on standards</li>
+                            <li>Custom authentication could easily be added (IDP...)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Improvements</h2>
+                        <ul>
+                            <li>Can't revoke existing token</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
                     <h2>topics 1</h2>
                     <ul>
                         <li><strike>Data (NoSQL, shared DBEngine, data copy)</strike></li>
-                        <li>Authorization</li>
+                        <li><strike>Authorization</strike></li>
                         <li>Configuration</li>
                         <li>Versionnings (Bridge-V3 = meta-project)</li>
                         <li>Shared Library (micro-framework)</li>
