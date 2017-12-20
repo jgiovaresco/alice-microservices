@@ -30,27 +30,10 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h3>Alice au pays des micro-services</h3>
+                    <h1>Alice au pays des micro-services</h1>
                     <p style="margin-top: 150px">
                         <small>By Julien Giovaresco & Willy Malvault</small>
                     </p>
-                </section>
-
-                <section>
-                    <h2>Context (Bridge)</h2>
-                    <ul>
-                        <li>Online 2 Offline</li>
-                        <li>BackOffice for data management</li>
-                        <li>Front-Office for SEO</li>
-                        <li><strong>TODO: give figures</strong></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Context (V2 infrastructure)</h2>
-                    <img class="rails-logo" src="images/logo/rails-1.svg" alt="rails logo" />
-                    <img class="postgres-logo" src="images/logo/postgresql.svg" alt="postgresql logo" />
-                    <p><strong>TODO: give figures</strong></p>
                 </section>
 
                 <section>
@@ -59,52 +42,125 @@
                     </section>
 
                     <section>
-                        <h2>topics 1</h2>
+                        <h2>Bridge</h2>
                         <ul>
-                            <li>How to implement a micro-service  ?</li>
-                            <li><strike>How to split services ?</strike></li>
-                            <li><strike>Configuration</strike></li>
-                            <li>Shared Library (micro-framework)</li>
-                            <li><strike>Authorization</strike></li>
-                            <li><strike>Data (NoSQL, shared DBEngine, data copy)</strike></li>
-                            <li><strike>Deployment / Release Process / Versionning</strike></li>
+                            <li>Online to Offline</li>
+                            <li>Bridge V2</li>
+                            <li>clients</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2>topics 2</h2>
+                        <h2>Designing building blocks</h2>
                         <ul>
-                            <li><strike>Messaging (types, cycles, shared, ...etc)</strike></li>
-                            <li>Data Validation/typing (brealking the FO)</li>
+                            <li>How to build a piece of micro-service</li>
+                            <li>How to split services ?</li>
+                            <li>Shared Library</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Assembling blocks together</h2>
+                        <ul>
+                            <li>Deployment / Release Process / Versionning</li>
+                            <li>Configuration</li>
+                            <li>Authorization</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Develop / Test</h2>
+                        <ul>
                             <li>Development env (dev stacks needed)</li>
                             <li>Tests du service</li>
                             <li>Tests de l'ensemble</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Making pieces working together</h2>
+                        <ul>
+                            <li><strike>Data (NoSQL, shared DBEngine, data copy)</strike></li>
+                            <li><strike>Messaging (types, cycles, shared, ...etc)</strike></li>
+                            <li>Data Validation/typing (brealking the FO)</li>
                             <li>Context : do a fucking API gateway !</li>
                         </ul>
                     </section>
 
-                    <section>
-                        <h3>TODO</h3>
-                        <ul>
-                            <li>Add FO infra (symfony)</li>
-                            <li>The slide to rember</li>
-                        </ul>
-                    </section>
 
                 </section>
 
                 <section>
                     <section>
-                        <h1>The first of an Era</h1>
+                        <h1>Bridge</h1>
+                    </section>
+
+                    <section>
+                        <h2>Context (Bridge)</h2>
+                        <ul>
+                            <li>Online 2 Offline</li>
+                            <li>BackOffice for data management</li>
+                            <li>Front-Office for SEO</li>
+                            <li><strong>TODO: give figures</strong></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Context (V2 infrastructure)</h2>
+                        <img class="rails-logo" src="images/logo/rails-1.svg" alt="rails logo" />
+                        <img class="postgres-logo" src="images/logo/postgresql.svg" alt="postgresql logo" />
+                        <p><strong>TODO: give figures</strong></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Building the services</h1>
                     </section>
 
                     <section>
                         <h2>The mustache stack</h2>
+                        <ul>
+                            <li>lightweight</li>
+                            <li>mono thread is OK</li>
+                        </ul>
                         <img class="nodejs-logo" src="images/logo/nodejs.png" alt="nodejs logo" />
                         <img class="express-logo" src="images/logo/express.svg" alt="express logo" />
                         <img class="mongo-logo" src="images/logo/mongodb.svg" alt="mongodb logo" />
                         <img class="rabbitmq-logo" src="images/logo/rabbitmq.svg" alt="rabbitmq logo" />
                         <!-- TODO : mettre une photo de Yannick à moustache -->
+                    </section>
+
+                    <section>
+                        <h2>Recipes to split services</h2>
+                        <ul>
+                            <li>One resource = one service</li>
+                            <li>Minimal/Maximal size ?</li>
+                            <li>Do something in Elixir ?</li>
+                            <li>Do iterate : split/merge</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Shared Library ?</h2>
+                        <ul>
+                            <li>micro-framework</li>
+                            <li>micro-services - micro libraries (split per concerns)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Front-Offices</h2>
+                        <ul>
+                            <li>independent, but still dependent</li>
+                            <li>Beware of dependencies</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Assembling blocks</h1>
                     </section>
 
                     <section>
@@ -114,30 +170,9 @@
                         <img class="aws-logo" src="images/logo/aws-logo.svg" alt="aws logo" />
                         <!-- TODO : mettre une photo de Jimmy à moustache -->
                     </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>How to split services ?</h1>
-                    </section>
 
                     <section>
-                        <h2>Recipes</h2>
-                        <ul>
-                            <li>One resource = one service</li>
-                            <li>Minimal/Maximal size ?</li>
-                            <li>Do iterate : split/merge</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>Configuration</h1>
-                    </section>
-
-                    <section>
-                        <h2>Problems</h2>
+                        <h2>Configuration</h1>
                         <ul>
                             <li>Where are my config files ?</li>
                             <li>Where should I deploy things ?</li>
@@ -153,24 +188,32 @@
                             <li>Easy peasy (auto deploy)</li>
                         </ul>
                     </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>On releasing your product</h1>
-                    </section>
 
                     <section>
-                        <h2>Meta-project needed</h2>
+                        <h2>Authorization</h2>
                         <ul>
-                            <li>How to scale parallel developments ?</li>
-                            <li>Meta-project ensure consistency</li>
+                            <li>Authentication handled by Keycloak</li>
+                            <li>Backoffice delegates the authentication</li>
+                            <li>Apis check the OAuth2 token in request headers</li>
+                        </ul>
+
+                        <h2>Pros</h2>
+                        <ul>
+                            <li>Based on standards</li>
+                            <li>Custom authentication could easily be added (IDP...)</li>
+                        </ul>
+
+                        <h2>Improvements</h2>
+                        <ul>
+                            <li>Can't revoke existing token</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2>Release process</h2>
+                        <h2>Releasing the product</h2>
                         <ul>
+                            <li>How to scale parallel developments ?</li>
+                            <li>Meta-project ensure consistency</li>
                             <li>Integration of services</li>
                             <li>Beware of side effects</li>
                         </ul>
@@ -178,6 +221,16 @@
                 </section>
 
                 <section>
+                    <section>
+                        <h1>Develop / Test</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Make pieces work together</h1>
+                    </section>
+
                     <section>
                         <h2>Data</h2>
                         <ul>
@@ -213,35 +266,7 @@
                             <li>- services are dependents</li>
                         </ul>
                     </section>
-                </section>
 
-                <section>
-                    <section>
-                        <h2>Authorization</h2>
-                        <ul>
-                            <li>Authentication handled by Keycloak</li>
-                            <li>Backoffice delegates the authentication</li>
-                            <li>Apis check the OAuth2 token in request headers</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Pros</h2>
-                        <ul>
-                            <li>Based on standards</li>
-                            <li>Custom authentication could easily be added (IDP...)</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Improvements</h2>
-                        <ul>
-                            <li>Can't revoke existing token</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
                     <section>
                         <h1>Messaging</h1>
                     </section>
@@ -272,6 +297,14 @@
                             <li>parent emmiter</li>
                         </ul>
                     </section>
+                </section>
+
+                <section>
+                    <h2>TODO</h2>
+                    <ul>
+                        <li>The slide to rember</li>
+                        <li>Where to put the cache ?</li>
+                    </ul>
                 </section>
 
                 <section data-background="gifs/thank-you.gif" style="color: black;">
