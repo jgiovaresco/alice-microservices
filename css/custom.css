@@ -10,6 +10,27 @@
     box-shadow: none;
 }
 
+/**
+ * Clients
+ */
+.logo-slim img {
+    height: 50px;
+    margin-left: 20px !important;
+}
+.logo-slim img:first-child {
+    height: 50px;
+    margin-left: 0 !important;
+}
+
+.logo-fat img {
+    height: 150px;
+    margin-left: 50px !important;
+}
+.logo-fat img:first-child {
+    height: 150px;
+    margin-left: 0 !important;
+}
+
 .rails-logo {
     position: absolute;
     left: 10px;
