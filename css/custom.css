@@ -70,6 +70,14 @@
     width: 200px;
 }
 
+.rest-schema-container {
+    height: 300px;
+}
+
+.rest-schema {
+    position: absolute;
+}
+
 .aws-logo {
     position: absolute;
     left: 10px;
