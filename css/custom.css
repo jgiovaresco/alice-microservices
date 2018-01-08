@@ -78,8 +78,6 @@
 }
 
 .k8s-logo {
-    position: absolute;
-    right: 10px;
     width: 250px;
     transform: rotate(30deg);
 }
