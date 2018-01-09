@@ -86,3 +86,16 @@
     position: absolute;
     width: 250px;
 }
+
+/**
+ * Gif
+ */
+
+.eating-alice {
+    display: block;
+    width: 250px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    /*position: absolute;*/
+    /*left: 10px;*/
+}

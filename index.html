@@ -199,57 +199,40 @@
                         <h1>Step 2 : Assembling blocks</h1>
                     </section>
 
-                    <section>
-                        <h2>Main issues</h2>
-                            <ul>
-                                <li>Where are my config files ?</li>
-                                <li>How do we deploy things ?</li>
-                                <li>Ensure overall behaviour</li>
-                                <li>The IP configuration hell</li>
-                            </ul>
+                    <section data-transition="fade-in fade-out">
+                        <img class="svg-slide" src="images/schemas/assembling-page-0.svg" alt="assembling 0" />
+                    </section>
+
+                    <section data-transition="fade-in fade-out">
+                        <img class="svg-slide" src="images/schemas/assembling-page-1.svg" alt="assembling 1" />
+                    </section>
+
+                    <section data-transition="fade-in fade-out">
+                        <img class="svg-slide" src="images/schemas/assembling-page-2.svg" alt="assembling 2" />
+                    </section>
+
+                    <section data-transition="fade-in fade-out">
+                        <img src="images/alice/alice_falling.gif" alt="falling alice" />
+                    </section>
+
+                    <section data-transition="fade-in fade-out">
+                        <img class="svg-slide" src="images/schemas/assembling-page-3.svg" alt="assembling 2" />
                     </section>
 
                     <section>
-                        <img class="k8s-logo" src="images/logo/kubernets.svg" alt="kubernetes logo" />
-                        <h2>Kubernetes rocks</h2>
+                        <h2>How to deploy ?</h2>
                         <ul>
-                            <li>Describe your services configuration : ConfigMaps</li>
-                            <li>Describe how they communicate : stack.yml</li>
-                            <li>Easy-peasy deployment</li>
+                            <li>Produce a big YAML</li>
+                            <li>Give it to Kubernetes</li>
                         </ul>
+                        <img class="eating-alice" src="images/alice/alice_eating.gif" alt="eating alice" />
                     </section>
 
                     <section>
-                        <h2>Releasing the product</h2>
+                        <h2>How to produce this yaml ?</h2>
                         <ul>
-                            <li>How to scale parallel developments ?</li>
                             <li>Meta-project ensure consistency</li>
-                            <li>Integration of services</li>
-                            <li>Beware of side effects</li>
-                        </ul>
-                    </section>
-
-                    <section data-transition="none-in fade-out">
-                        <img class="svg-slide" src="images/schemas/infra.svg" alt="infra" />
-                    </section>
-
-                    <section>
-                        <h2>Authorization</h2>
-                        <ul>
-                            <li>Authentication handled by Keycloak</li>
-                            <li>Backoffice delegates the authentication</li>
-                            <li>Apis check the OAuth2 token in request headers</li>
-                        </ul>
-
-                        <h2>Pros</h2>
-                        <ul>
-                            <li>Based on standards</li>
-                            <li>Custom authentication could easily be added (IDP...)</li>
-                        </ul>
-
-                        <h2>Improvements</h2>
-                        <ul>
-                            <li>Can't revoke existing token</li>
+                            <li>Jenkins pipelines</li>
                         </ul>
                     </section>
                 </section>
