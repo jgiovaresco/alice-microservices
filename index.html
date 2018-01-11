@@ -253,11 +253,14 @@
                     </section>
 
                     <section>
-                        <h2>Two ways of doing this</h2>
-                        <ul>
-                            <li>Push data and duplicate</li>
-                            <li>Pull data when needed</li>
-                        </ul>
+                        <img class="svg-slide" style="height: 250px;" src="images/schemas/copy-vs-no-copy.svg" alt="copy vs no copy" />
+                        <div class="fragment">
+                            <h5>Two scenarios for comparison</h5>
+                            <ol>
+                                <li>Create a location and publish</li>
+                                <li>Force publication of existing location</li>
+                            </ol>
+                        </div>
                     </section>
 
                     <section>
@@ -277,28 +280,43 @@
                     </section>
 
                     <section>
-                        <h2>Duplicate data between service</h2>
-                        <ul>
-                            <li>+ services are decoupled</li>
-                            <li>+ entities could be renamed to respect the language of
-                                the service
-                            </li>
-                            <li>- needs a robust messaging system</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Ask for the data when needed</h2>
-                        <ul>
-                            <li>+ the data are not duplicated. Easier to keep
-                                consistency
-                            </li>
-                            <li>- services are dependents</li>
-                        </ul>
+                        <h2>Theoretical results</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Data copy</th>
+                                    <th>No copy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CRUD</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Request</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Runtime Depent</td>
+                                    <td>No</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Synchronization</td>
+                                    <td>Lambda or Hell</td>
+                                    <td>No (GraphQL)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
 
                     <section>
                         <h1>Messaging</h1>
+                        <img height="300" src="images/gifs/rabbit-messaging.gif" alt="rabbit" />
                     </section>
 
                     <section>
