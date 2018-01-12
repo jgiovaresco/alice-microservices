@@ -38,28 +38,6 @@
 
                 <section>
                     <section>
-                        <h1>Roadmap and TODO (temporary chapter)</h1>
-                    </section>
-
-                    <section>
-                        <h2>Various things to mention</h2>
-                        <ul>
-                            <li>Where to put the cache ?</li>
-                            <li>Need development stack (evrything in local is not enough)</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Conclusion</h2>
-                        <ul>
-                            <li>Pro and Cons</li>
-                            <li>The slide to rember</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
                         <img class="bridge-logo" src="images/logo/BRIDGE.png" alt="bridge logo" />
                     </section>
 
@@ -119,7 +97,8 @@
 
                 <section>
                     <section>
-                        <h1>Step 1 : Build micro-services</h1>
+                        <h1>Step 1</h1>
+                        <h2>Build micro-services</h2>
                     </section>
 
                     <section data-transition="slide fade-out">
@@ -147,14 +126,10 @@
                     </section>
 
                     <section>
-                        <h3>Let do micro-services now !</h3>
-                        <img width="450" src="images/gifs/alice-going-micro.gif" alt="alice late gif" />
-                    </section>
-
-                    <section>
                         <h2>How to split services ?</h2>
                         <div class="fragment">
                             <blockquote>« Go as micro as possible ! »</blockquote>
+                            <img width="450" src="images/gifs/alice-going-micro.gif" alt="alice late gif" />
                         </div>
                     </section>
 
@@ -190,13 +165,19 @@
                     </section>
 
                     <section>
+                        <h2>How about Bridge ?</h2>
+                        <img width="450" src="images/gifs/alice-bridge-team.gif" alt="alice bridge gif" />
+                    </section>
+
+                    <section>
                         <img class="svg-slide" src="images/schemas/bridge-overview.svg" alt="spliting 5" />
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <h1>Step 2 : Assembling blocks</h1>
+                        <h1>Step 2</h1>
+                        <h2>Assembling blocks</h2>
                     </section>
 
                     <section data-transition="fade-in fade-out">
@@ -301,13 +282,13 @@
                                     <td>5</td>
                                 </tr>
                                 <tr>
-                                    <td>Runtime Depent</td>
-                                    <td>No</td>
-                                    <td>Yes</td>
+                                    <td>Runtime</td>
+                                    <td>indepent</td>
+                                    <td>dependent</td>
                                 </tr>
-                                <tr>
-                                    <td>Data Synchronization</td>
-                                    <td>Lambda or Hell</td>
+                                <tr class="fragment">
+                                    <td>Data Synchro</td>
+                                    <td>Hell or <a href="http://milinda.pathirage.org/kappa-architecture.com/">Kappa</a></td>
                                     <td>No (GraphQL)</td>
                                 </tr>
                             </tbody>
@@ -315,36 +296,35 @@
                     </section>
 
                     <section>
-                        <h1>Messaging</h1>
-                        <img height="300" src="images/gifs/rabbit-messaging.gif" alt="rabbit" />
+                        <h2>So what should we choose ?</h2>
+                        <img height="350" src="images/gifs/alice-confused.gif" alt="rabbit" />
+                        <div class="fragment">
+                            <span>We can tell you what you should not do : decentralizing the state (i.e. CRUD of the data)</span>
+                        </div>
                     </section>
 
                     <section>
-                        <h2>messaging is cool !</h2>
+                        <h2>Beware ! don't decentralize the state of your services !</h2>
                         <ul>
-                            <li>Uncoupling :)</li>
-                            <li>stacking events</li>
-                            <li>delaying events</li>
-                            <li>RMQ is a daman robust beast !</li>
+                            <li>Boucle geocoding avec correction addresse pas utilisateur</li>
+                            <li>Boucle all locations avec URL website corrigée</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2>Beware ! You a re decentralizing the state !</h2>
+                        <a href="https://api-documentation.leadformance.com/messageViz/index.html">
+                            <img class="message-viz" src="images/messageviz.png" alt="message visualization" />
+                        </a>
                     </section>
+                </section>
 
-                    <section>
-                        <img class="message-viz" src="images/messageviz.png" alt="message visualization" />
-                    </section>
-
-                    <section>
-                        <h2>Add meta-data ASAP</h2>
-                        <ul>
-                            <li>correlation ID</li>
-                            <li>errors</li>
-                            <li>parent emmiter</li>
-                        </ul>
-                    </section>
+                <section>
+                    <h2>Various things to mention</h2>
+                    <ul>
+                        <li>Where to put the cache ?</li>
+                        <li>Need development stack (evrything in local is not enough)</li>
+                        <li>messaging meta-data, correlation ID, errors, parent emmiter</li>
+                    </ul>
                 </section>
 
                 <section>
