@@ -10,6 +10,10 @@
     box-shadow: none;
 }
 
+.bridge-logo {
+    height: 150px;
+}
+
 /**
  * Clients
  */
@@ -91,7 +95,8 @@
  * Gif
  */
 
-.eating-alice {
+.eating-alice,
+.alice-cards {
     display: block;
     width: 250px;
     margin-right: auto !important;
