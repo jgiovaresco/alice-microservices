@@ -32,14 +32,15 @@
                 <section>
                     <h1>Alice au pays des micro-services</h1>
                     <p style="margin-top: 150px">
-                        <small>By Julien Giovaresco & Willy Malvault</small>
+                        <small>By Julien Giovaresco and Willy Malvault</small>
                     </p>
                 </section>
 
                 <section>
                     <section>
-                        <img src="images/logo/BRIDGE.png" alt="bridge logo" />
+                        <img src="images/solocal-bridge-white.png" alt="bridge logo" />
                     </section>
+
                     <section>
                         <h2>A central platform for points of sale management</h2>
                         <ul>
@@ -92,35 +93,15 @@
                 <section>
                     <section>
                         <h1>Step 1</h1>
-                        <h2>Build micro-services</h2>
-                    </section>
-
-                    <section data-transition="slide fade-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-0.svg" alt="rest 0" />
-                    </section>
-
-                    <section data-transition="slide fade-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-1.svg" alt="rest 1" />
-                    </section>
-
-                    <section data-transition="fade-in fade-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-2.svg" alt="rest 2" />
-                    </section>
-
-                    <section data-transition="none-in none-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-3.svg" alt="rest 3" />
-                    </section>
-
-                    <section data-transition="none-in none-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-4.svg" alt="rest 4" />
-                    </section>
-
-                    <section data-transition="none-in fade-out">
-                        <img class="svg-slide" src="images/schemas/rest-page-5.svg" alt="rest 5" />
+                        <h2>Define your architecture</h2>
                     </section>
 
                     <section>
-                        <h2>How to split services ?</h2>
+                        <img class="svg-slide" src="images/schemas/bridge-overview.svg" alt="spliting 5" />
+                    </section>
+
+                    <section>
+                        <h2>How to keep you service micro-sized ?</h2>
                         <div class="fragment">
                             <blockquote>« Go as micro as possible ! »</blockquote>
                             <img width="450" src="images/gifs/alice-going-micro.gif" alt="alice late gif" />
@@ -152,19 +133,10 @@
                         <span>(Authentication, DB, Access control, ...)</span>
 
                         <div class="fragment">
-                            <img width="450" src="images/gifs/i-am-fine.gif" alt="alice late gif" />
+                            <img width="450" src="images/gifs/woah-no.gif" alt="whoah no" />
                             <br />
-                            <span>But do <strong>micro libraries</strong> (one per concern) and keep <strong>all your services up to date !</strong></span>
+                            <span>Try to avoid ! But if you do,  do <strong>micro libraries</strong> and keep <strong>all your services up to date !</strong></span>
                         </div>
-                    </section>
-
-                    <section>
-                        <h2>How about Bridge ?</h2>
-                        <img width="450" src="images/gifs/alice-bridge-team.gif" alt="alice bridge gif" />
-                    </section>
-
-                    <section>
-                        <img class="svg-slide" src="images/schemas/bridge-overview.svg" alt="spliting 5" />
                     </section>
                 </section>
 
@@ -225,15 +197,16 @@
                     </section>
 
                     <section>
-                        <img class="svg-slide" src="images/schemas/data-synchro.svg" alt="data-synchro 0" />
-                    </section>
-
-                    <section>
-                        <img class="svg-slide" style="height: 250px;" src="images/schemas/copy-vs-no-copy.svg" alt="copy vs no copy" />
+                        <ul>
+                            <li>Full data copy (NoSQL way)</li>
+                            <li>No copy</li>
+                            <li>One single shared DB</li>
+                        </ul>
                         <div class="fragment">
                             <ol>
                                 <li>Create a location and publish</li>
                                 <li>Force publication of existing location</li>
+                                <li>Create a product and copy data to locations</li>
                             </ol>
                         </div>
                     </section>
@@ -243,67 +216,11 @@
                     </section>
 
                     <section>
-                        <img class="svg-slide" src="images/schemas/no-copy-crud.svg" alt="no-copy-crud" />
-                    </section>
-
-                    <section>
                         <img class="svg-slide" src="images/schemas/data-copy-request.svg" alt="data-copy-request" />
                     </section>
 
                     <section>
-                        <img class="svg-slide" src="images/schemas/no-copy-request.svg" alt="no-copy-request" />
-                    </section>
-
-                    <section>
-                        <h2>Theoretical results</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Data copy</th>
-                                    <th>No copy</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>CRUD</td>
-                                    <td>5 ops</td>
-                                    <td>6 ops</td>
-                                </tr>
-                                <tr>
-                                    <td>Request</td>
-                                    <td>3 ops</td>
-                                    <td>5 ops</td>
-                                </tr>
-                                <tr>
-                                    <td>Runtime</td>
-                                    <td>indepent</td>
-                                    <td>dependent</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Data Synchro</td>
-                                    <td>Hell or <a href="http://milinda.pathirage.org/kappa-architecture.com/">Kappa</a></td>
-                                    <td>No (GraphQL)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section>
-                        <h2>So what should we choose ?</h2>
-                        <img height="350" src="images/gifs/alice-confused.gif" alt="rabbit" />
-                        <div class="fragment">
-                            <span>We can tell you what you should not do : mass copy, decentralize CRUD</span>
-                        </div>
-                    </section>
-
-                    <section>
                         <img class="svg-slide" src="images/schemas/product-copy-synchro.svg" alt="product-copy-synchro" />
-                    </section>
-
-                    <section>
-                        <h2>This is not hell yet !</h2>
-                        <img height="350" src="images/gifs/gone-mad.gif" alt="gone mad" />
                     </section>
 
                     <section data-transition="fade-in none-out">
@@ -336,7 +253,7 @@
 
                     <section>
                         <blockquote>Data Synchro complexity grows along with service decentralization</blockquote>
-                        <img height="350" src="images/gifs/alice-crying.gif" alt="alice crygin gif" />
+                        <img height="350" src="images/gifs/gone-mad.gif" alt="gone mad" />
                     </section>
 
                     <!-- <section> -->

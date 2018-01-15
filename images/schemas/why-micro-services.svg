@@ -634,7 +634,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.26"
      inkscape:cx="1464.0841"
-     inkscape:cy="1117.3192"
+     inkscape:cy="1121.1654"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -655,7 +655,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -768,6 +768,17 @@
          x="1242.4668"
          y="2264.8372"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:131.38394165px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0099cc;fill-opacity:1;stroke-width:2.61281729px">More clients</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:178.71028137px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0099cc;fill-opacity:1;stroke:none;stroke-width:3.55399036px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1860.3231"
+       y="631.91272"
+       id="text6569-6-8-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan6567-6-2-1-8"
+         x="1860.3231"
+         y="631.91272"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:178.71028137px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0099cc;fill-opacity:1;stroke-width:3.55399036px">Fun</tspan></text>
   </g>
   <style
      id="style2996"
