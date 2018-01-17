@@ -7,10 +7,13 @@ de capter du traffic internet pour l'amener dans les magasins physiques.
 Nous proposons une plateforme unifée permettant la gestion de points de vente. Cette plateforme fournit
 un ensemble de service :
 
+Exemple via Darty
+
 - le service historique étant le "Store Locator" : il s'agit d'un site internet vitrine qui permet de chercher
 les points de vente, connaitre leur horaires d'ouverture, les produits et services disponibles...
 - en parallèle nous proposons d'autre service comme le "Presence Management" qui consiste à publier les données
-des points de vente sur un ensemble d'annuaires (GMB, Pages Jaunes...)
+des points de vente sur un ensemble d'annuaires (Google, Pages Jaunes...)
+
 - ou encore une solution permettant de gérer ses campagnes AdWords plus facilement
 
 ## SOME FIGURES
@@ -21,7 +24,7 @@ Un petit slide marketing pour vous donner une idée du traffic :
 
 Comme vous pouvez le voir la plateforme doit pouvoir subir un peu de charge.
 
-## V2
+## Legacy
 
 Jusqu'à Janvier 2016, le produit reposait sur une application Rails. Il s'agit d'une
 application monolithique au dessus d'une base Postgres.
@@ -41,6 +44,11 @@ absorber une charge de plus en plus importante. C'est pourquoi la boite a décid
 
 ## WHY GOING MICRO-SERVICES ?
 
+reecriture : pb de trouver des dev rails
+- Difficulté de maintenir l'application
+- page blanche pour démarrer
+- 200 clients, objectif 2000
+-
 - le produit s'y prête plutôt bien : nous avons différents modules métiers
 - la société a l'ambition de grossir énormément : ce qui voulait dire + de clients et + de développeurs
   - il nous faudrait donc scaler plus facilement que l'application actuelle
