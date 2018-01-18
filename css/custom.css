@@ -35,6 +35,21 @@
 }
 
 /**
+ * K8s
+ */
+.k8s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.k8s-logo {
+    width: 250px;
+    transform: rotate(30deg);
+}
+
+/**
  * Clients
  */
 .logo-slim img {
@@ -85,11 +100,6 @@
     left: 10px;
     width: 250px;
     transform: rotate(330deg);
-}
-
-.k8s-logo {
-    width: 250px;
-    transform: rotate(30deg);
 }
 
 .docker-logo {
