@@ -50,6 +50,26 @@
 }
 
 /**
+ * messaging-bugs
+ */
+.messaging-bugs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/**
+ * dev-stacks
+ */
+.dev-stacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/**
  * Clients
  */
 .logo-slim img {
