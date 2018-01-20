@@ -742,7 +742,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -754,14 +754,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:152.73127747px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f5f6fd;fill-opacity:0.87843137;stroke:none;stroke-width:1.7898196px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1011.9489"
-       y="-829.77893"
+       x="1213.8719"
+       y="-847.8078"
        id="text6569-6"><tspan
          sodipodi:role="line"
          id="tspan6567-6"
-         x="1011.9489"
-         y="-829.77893"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:152.73127747px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f5f6fd;fill-opacity:0.87843137;stroke-width:1.7898196px">Data copy (direct request)</tspan></text>
+         x="1213.8719"
+         y="-847.8078"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:152.73127747px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f5f6fd;fill-opacity:0.87843137;stroke-width:1.7898196px">Force synchronization</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
