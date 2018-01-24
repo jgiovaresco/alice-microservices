@@ -152,13 +152,13 @@
                     </section>
 
                     <section>
-                        <h2>But Good solutions exists !</h2>
+                        <h2>Promising evolutions</h2>
+                        <img height="300" src="images/gifs/alice-promising.gif" alt="alice promising world gif" />
+                        <br />
                         <ul>
                             <li class="fragment">Setup an API gateway</li>
                             <li class="fragment">Use a storage API</li>
                         </ul>
-
-                        <img height="350" src="images/gifs/alice-she-is-pretty.gif" alt="alice I think she is pretty" />
                     </section>
                 </section>
 
@@ -194,7 +194,7 @@
 
                     <section>
                         <h2>Our backbone</h2>
-                        <img src="images/gifs/alice-worship.gif" alt="alice worship" />
+                        <img src="images/gifs/alice-worship.gif" height="300" alt="alice worship" />
                         <ul>
                             <li>Internal DNS</li>
                             <li>Centralized configuration</li>
@@ -255,11 +255,16 @@
                     </section>
 
                     <section>
+                        <img class="svg-slide" src="images/schemas/data-synchro.svg" alt="data-synchro" />
+                    </section>
+
+                    <section>
                         <h2>The different path</h2>
+                        <img class="svg-slide" src="images/gifs/alice-choose-path.gif" alt="alice choose path" />
                         <ol>
-                            <li class="fragment">One single shared DB</li>
-                            <li class="fragment">No copy</li>
-                            <li class="fragment"><strong>Full data copy (NoSQL way)</strong></li>
+                            <li class="fragment">One single shared DB (strong coupling)</li>
+                            <li class="fragment">Ask data when needed (slow read)</li>
+                            <li class="fragment"><strong>Full data copy (NoSQL way : fast read)</strong></li>
                         </ol>
                     </section>
 
